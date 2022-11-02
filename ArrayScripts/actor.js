@@ -44,8 +44,26 @@ let filmLength = academyMembers[i].films.length;
 //name Bob
   
 for (i = 0; i < length; i++){
-
   if ((academyMembers[i].name).slice(0 , 3) == "Bob")
    console.log(academyMembers[i].name + " has the name that starts with Bob. ")
   }
+
+
+//starts with A 
+
+for (i = 0; i < length; i++){
+    let films = academyMembers[i].films;
+    let filmLength = films.length;
+
+    for( let n =0 ; n < filmLength ;n++ ){
+
+      let startsA = films[n].slice(0 , 1) == "A"; 
+      if ( startsA ){
+        console.log(academyMembers[i].name)
+        break;
+      }
+    }
+   }
+
+
 
